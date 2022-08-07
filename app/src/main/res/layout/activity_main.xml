@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/aq"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="154dp"
+        android:layout_height="221dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="136dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/usuariocandado" />
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="-51dp"
+        android:gravity="center"
+        android:text="INICIO SESION"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/eduser"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtitle"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_supervisor_account_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            android:textStyle="bold"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edpass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eduser"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnentrar"
+        android:layout_width="395dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/edpass"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/material_on_surface_emphasis_high_type"
+        android:text="ACCEDER" />
+
+    <TextView
+        android:id="@+id/tvoption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnentrar"
+        android:layout_marginTop="58dp"
+        android:gravity="center"
+        android:text="¿OLVIDASTE LA CONTRASEÑA?"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="401dp"
+        android:layout_height="256dp"
+        android:layout_below="@+id/tvoption"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnolvidaste"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tvoption"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="102dp"
+        android:backgroundTint="@color/material_on_surface_emphasis_high_type"
+        android:gravity="center"
+        android:text="RESTABLECER " />
+
+    <TextView
+        android:id="@+id/mini"
+        android:layout_width="389dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="458dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="PROYECTO CREDITOS ADICIONALES TESE"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

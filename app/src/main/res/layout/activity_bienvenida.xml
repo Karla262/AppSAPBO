@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    tools:context=".Bienvenida">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginEnd="114dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/sp" />
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:gravity="center"
+        android:text="AGREGAR ARTICULO"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/managerr"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtitle"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_key_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/manager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usuario"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/managerr"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_auto_awesome_motion_24">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/articulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Artículo"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pass"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usuario"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/black"
+        app:startIconDrawable="@drawable/ic_baseline_article_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/precio"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:hint="Descrpción"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnagregar"
+        android:layout_width="392dp"
+        android:layout_height="96dp"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/material_on_surface_emphasis_high_type"
+        android:text="AGREGAR" />
+    <TextView
+        android:id="@+id/mini"
+        android:layout_width="389dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="460dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="PROYECTO CREDITOS ADICIONALES TESE"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

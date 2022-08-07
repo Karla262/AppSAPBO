@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/a2"
+    android:padding="10dp"
+    tools:context=".Borrar">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="277dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-80dp"
+        android:layout_marginEnd="-48dp"
+        android:layout_marginBottom="-10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sapp" />
+
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="-9dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="BORRAR "
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvtitle"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="ID"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idelete"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtitle"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnborrar"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/tvtitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="BORRAR"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/cardview_dark_background" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/comp"
+        android:layout_width="303dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btnborrar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="COMPROBAR"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/design_default_color_primary_dark" />
+
+    <TextView
+        android:id="@+id/mini"
+        android:layout_width="389dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="559dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="PROYECTO CREDITOS ADICIONALES TESE"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

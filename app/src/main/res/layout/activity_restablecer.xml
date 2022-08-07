@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/a2"
+    android:padding="10dp"
+    tools:context=".Restablecer">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="277dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-80dp"
+        android:layout_marginEnd="-48dp"
+        android:layout_marginBottom="-10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sapp" />
+
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="-9dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="BUSCAR ARTÍCULOS"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewid"
+        android:layout_width="64dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvtitle"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="43dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ID"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editbuscar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtitle"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buscar"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/tvtitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/material_on_surface_disabled"
+        android:text="BUSCAR"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/cardview_dark_background" />
+
+
+    <TextView
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buscar"
+        android:layout_marginTop="14dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Resultado de la consulta"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="393dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/buscar"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="55dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="ARTÍCULO"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/articulo"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/des"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="199dp" />
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="390dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/articulo"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="DESCRIPCIÓN"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/de"
+        android:layout_width="402dp"
+        android:layout_height="146dp"
+        android:layout_below="@id/descripcion"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-black"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="338dp" />
+
+    <TextView
+        android:id="@+id/mini"
+        android:layout_width="389dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="460dp"
+        android:layout_marginBottom="-20dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="PROYECTO CREDITOS ADICIONALES TESE"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
